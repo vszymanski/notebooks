@@ -1,0 +1,11 @@
+Circuit RLC
+V1 1 0 DC
+R1 1 2 10K
+C1 2 0 100N
+L1 2 3 10M
+R 3 0 10
+.CONTROL
+DC V1 0 10 1
+PRINT V(2) > export-2.txt
+.ENDC
+.END

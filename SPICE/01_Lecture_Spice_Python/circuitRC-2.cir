@@ -1,0 +1,10 @@
+Circuit RC
+v1 1 0 dc 1
+r1 1 2 1k 
+c1 2 0 100n ic=0
+r2 2 0 1MEG
+.control
+tran 1Us 1ms uic
+print v(2)> export-2.txt
+.endc
+.end
